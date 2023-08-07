@@ -1,0 +1,114 @@
+@import './reset.css';
+
+:root {
+  --dark-pink: #ba4270;
+  --link-water-white: #fbfcfe;
+  --san-juan-blue: #36536b;
+  --mirage-blue: #1b262f;
+  --light-blue: #edf3f8;
+  --charm-pink: #da6d97;
+  --light-san-juan-blue: #6c8294;
+}
+/* font-family: 'DM Serif Display', serif;
+font-family: 'Public Sans', sans-serif; */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'DM Serif Display', serif;
+}
+
+body {
+  background-color: var(--light-blue);
+  color: var(--san-juan-blue);
+}
+
+.header-container {
+  padding: 0 2.4rem;
+  background: url(../assets/shared/desktop/bg-pattern-circle.svg) no-repeat top -15rem right -20rem;
+}
+
+.header {
+  max-width: 111rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+
+.nav-bar .btn-schedule-demo {
+  margin-left: auto;
+}
+
+.header-link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--san-juan-blue);
+  font-weight: 700;
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.header-link:hover {
+  opacity: 1;
+}
+
+.btn-schedule-demo {
+  border-radius: 2.4rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: inherit;
+  background-color: var(--dark-pink);
+  color: var(--link-water-white);
+  padding: 1.6rem 2.7rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  min-width: 18.5rem;
+}
+
+.btn-schedule-demo:hover {
+  background-color: var(--charm-pink);
+}
+
+.schedule-demo-container {
+  background-color: white;
+  display: flex;
+  max-width: 44.5rem;
+  justify-content: space-between;
+  border-radius: 2.4rem;
+}
+
+.schedule-demo-container input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  border-radius: 2.4rem;
+  padding-left: 2rem;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--san-juan-blue);
+  min-height: 4.9rem;
+  /* mobile: flex-direction: column;
+background: transparent;
+gap: 2rem; */
+}
+
+.schedule-demo-container input::placeholder {
+  color: var(--san-juan-blue);
+  opacity: 0.5;
+}
+
+.main-heading {
+  font-size: 7.2rem;
+}
