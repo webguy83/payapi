@@ -26,12 +26,35 @@ body {
   color: var(--san-juan-blue);
 }
 
+.heading-2 {
+  font-size: 4.8rem;
+  color: var(--link-water-white);
+}
+
+.desc {
+  line-height: 2.8rem;
+  font-size: 1.5rem;
+}
+
 .header-container {
   padding: 0 2.4rem;
-  background: url(../assets/shared/desktop/bg-pattern-circle.svg) no-repeat top -15rem right -20rem;
+  overflow: hidden;
+  /* background: url(../assets/shared/desktop/bg-pattern-circle.svg) no-repeat top -15rem right -20rem; */
+}
+
+.header .circle-bg {
+  position: absolute;
+  top: -12rem;
+  right: -33rem;
+  z-index: 0;
 }
 
 .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
   max-width: 111rem;
   margin: 0 auto;
   min-height: 100vh;
@@ -83,7 +106,8 @@ body {
 .schedule-demo-container {
   background-color: white;
   display: flex;
-  max-width: 44.5rem;
+  width: 80%;
+  min-width: 37.5rem;
   justify-content: space-between;
   border-radius: 2.4rem;
 }
@@ -93,7 +117,7 @@ body {
   border: 0;
   outline: 0;
   border-radius: 2.4rem;
-  padding-left: 2rem;
+  padding: 0 2rem;
   font-family: inherit;
   font-size: 1.5rem;
   font-weight: 700;
@@ -109,6 +133,159 @@ gap: 2rem; */
   opacity: 0.5;
 }
 
+.menu-backdrop {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--link-water-white);
+  transition: all 0.2s;
+}
+
 .main-heading {
   font-size: 7.2rem;
+}
+
+.nav-bar,
+.content {
+  position: relative;
+}
+
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.showMenu {
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.showMenu .menu {
+  max-width: 100%;
+}
+
+.closeBtn {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.about-us {
+  display: block;
+  font-family: inherit;
+  font-size: 1.5rem;
+  background: transparent;
+  color: var(--link-water-white);
+  cursor: pointer;
+  border: 1px solid var(--link-water-white);
+  padding: 1.6rem 3.2rem;
+  border-radius: 3rem;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.about-us:hover {
+  color: var(--mirage-blue);
+  background-color: var(--link-water-white);
+}
+
+.line {
+  align-self: stretch;
+  opacity: 0.15;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  transition: all 0.2s;
+  background-color: var(--mirage-blue);
+  max-width: 0px;
+  height: 100%;
+  list-style: none;
+  cursor: default;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.menu ul {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  padding: 0 2.7rem;
+  font-size: 2rem;
+  margin: 5.5rem 0;
+  font-weight: 700;
+}
+
+.menu .header-link {
+  font-size: 2rem;
+  color: var(--link-water-white);
+}
+
+.menu ul li:first-child {
+  align-self: flex-end;
+}
+
+.menu-circle {
+  width: 78rem;
+  height: 78rem;
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--san-juan-blue);
+  transform: translate(-34%, -65%);
+  opacity: 0.15;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 850px) {
+  .header .circle-bg {
+    width: 95rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -65rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .nav-bar .header-link,
+  .nav-bar .btn-schedule-demo {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .main-heading {
+    font-size: 3.2rem;
+  }
+
+  .schedule-demo-container {
+    flex-direction: column;
+    background-color: transparent;
+    gap: 2rem;
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .showMenu .menu {
+    width: 100%;
+  }
 }

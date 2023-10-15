@@ -1,11 +1,6 @@
 .content {
   display: flex;
   align-items: center;
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -22,9 +17,110 @@
   padding-left: 2rem;
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+  max-width: 57.5rem;
+}
+
+.clients-block {
+  background-color: var(--mirage-blue);
+  padding: 10rem 4rem;
+  overflow: hidden;
+}
+
+.clients-block-content {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+
+  .circle-bg {
+    position: absolute;
+    top: -45rem;
+    left: -25rem;
+  }
+}
+
+.clients-block-desc .heading-2 {
+  margin-bottom: 2.4rem;
+}
+
+.clients-block-desc,
+.logos-container {
+  flex: 1;
+}
+
+.block-container {
+  max-width: 111rem;
+  margin: 0 auto;
+}
+
+.logos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 6rem;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  flex-grow: 1.3;
+}
+
+.clients-block-desc .desc {
+  opacity: 0.7;
+  color: var(--link-water-white);
+}
+
+.about-us {
+  margin-top: 3rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .clients-block-content {
+    flex-direction: column;
+    text-align: center;
+
+    .circle-bg {
+      top: -50rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .about-us {
+    order: 3;
+  }
+
+  .clients-block-desc {
+    order: 2;
+  }
+
+  .logos-container {
+    width: 100%;
+    order: 1;
+  }
+
+  .block-container {
+    max-width: 75rem;
+  }
+
+  .about-us {
+    margin: 3rem auto;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .main-heading {
+    font-size: 3.2rem;
+  }
+}
+
 @media only screen and (max-width: 850px) {
   .main-heading {
     font-size: 4.8rem;
+    text-align: center;
   }
 
   .content {
@@ -34,14 +130,37 @@
   .phone-mockup {
     max-height: 45rem;
     order: 1;
+    padding-left: 3.5rem;
   }
 
   .info {
     order: 2;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .clients-block {
+    padding: 8rem 2.4rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .main-heading,
+  .clients-block-desc .heading-2 {
+    font-size: 3.2rem;
   }
 
-  .header-container {
-    background-size: 95rem 95rem;
-    background: url(../assets/shared/desktop/bg-pattern-circle.svg) no-repeat top -40rem center;
+  .logos-container {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: 5rem;
+
+    > img {
+      max-width: 10rem;
+    }
+  }
+
+  .block-container .about-us {
+    margin-bottom: 0;
   }
 }

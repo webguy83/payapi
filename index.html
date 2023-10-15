@@ -14,19 +14,36 @@
   </head>
 
   <body>
+    <div class="menu-backdrop">
+      <div class="menu">
+        <div class="menu-circle"></div>
+        <ul>
+          <li>
+            <button type="button" aria-label="close button" class="closeBtn">
+              <img src="./assets/shared/mobile/close.svg" alt="close button" />
+            </button>
+          </li>
+          <li class="line"><hr/ ></li>
+          <li><a class="link header-link" href="./pricing.html">Pricing</a></li>
+          <li><a class="link header-link" href="./about.html">About</a></li>
+          <li><a class="link header-link" href="./contact.html">Contact</a></li>
+          <li><button type="button" class="btn-schedule-demo">Schedule a Demo</button></li>
+        </ul>
+      </div>
+    </div>
     <header class="header-container">
       <div class="header">
+        <img src="../assets/shared/desktop/bg-pattern-circle.svg" alt="" class="circle-bg" />
         <nav class="nav-bar">
-          <img class="logo" src="./assets/shared/desktop/logo.svg" alt="logo" />
+          <a href="./index.html"><img class="logo" src="./assets/shared/desktop/logo.svg" alt="logo" /></a>
           <a class="link header-link" href="./pricing.html">Pricing</a>
           <a class="link header-link" href="./about.html">About</a>
           <a class="link header-link" href="./contact.html">Contact</a>
           <button type="button" class="btn-schedule-demo">Schedule a Demo</button>
-          <!-- <button type="button" aria-label="hamburger" class="hamburger">
-            <img src="./assets/icon-hamburger.svg" alt="" />
-          </button> -->
+          <button type="button" aria-label="hamburger" class="hamburger">
+            <img src="./assets/shared/mobile/menu.svg" alt="" />
+          </button>
         </nav>
-
         <div class="content">
           <div class="info">
             <h1 class="main-heading">Start building with our APIs for absolutely free.</h1>
@@ -34,16 +51,41 @@
               <input type="text" name="schedule-demo" placeholder="Enter email address" />
               <button type="button" class="btn-schedule-demo">Schedule a Demo</button>
             </form>
-            <p class="questions-text">Have any questions?</p>
-            <a class="link header-link" href="./contact.html">Contact Us</a>
+            <div class="text-group">
+              <p class="questions-text">Have any questions?</p>
+              <a class="link header-link" href="./contact.html">Contact Us</a>
+            </div>
           </div>
           <img src="./assets/home/desktop/illustration-phone-mockup.svg" class="phone-mockup" alt="phone mockup" />
           <!-- <h1 class="main-heading">Find the<br/ >best <span class="talent">talent</span></h1>
           <p class="desc">Finding the right people and building high performing teams can be hard. Most companies aren't tapping into the abundance of global talent. We're about to change that.</p> -->
         </div>
-        <div></div>
       </div>
     </header>
+    <main>
+      <section class="clients-block">
+        <div class="block-container">
+          <div class="clients-block-content">
+            <div class="clients-block-desc">
+              <h2 class="heading-2">Who we work with</h2>
+              <p class="desc">
+                Today, millions of people around the world have successfully connected their accounts to apps they love using our API. We provide developers with the tools they need to create easy and accessible experiences for their users.
+              </p>
+            </div>
+            <div class="logos-container">
+              <img src="./assets/shared/desktop/white/tesla.svg" alt="tesla" />
+              <img src="./assets/shared/desktop/white/microsoft.svg" alt="microsoft" />
+              <img src="./assets/shared/desktop/white/hewlett-packard.svg" alt="hewlett-packard" />
+              <img src="./assets/shared/desktop/white/oracle.svg" alt="oracle" />
+              <img src="./assets/shared/desktop/white/google.svg" alt="google" />
+              <img src="./assets/shared/desktop/white/nvidia.svg" alt="nvidia" />
+            </div>
+            <img src="../assets/shared/desktop/bg-pattern-circle.svg" alt="" class="circle-bg" />
+          </div>
+          <button type="button" class="about-us">About Us</button>
+        </div>
+      </section>
+    </main>
     <script src="dist/main.js"></script>
   </body>
 </html>
