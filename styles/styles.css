@@ -77,12 +77,12 @@ body {
   text-decoration: none;
   color: var(--san-juan-blue);
   font-weight: 700;
-  opacity: 0.7;
+  opacity: 1;
   transition: all 0.3s;
 }
 
 .header-link:hover {
-  opacity: 1;
+  opacity: 0.7;
 }
 
 .btn-schedule-demo {
@@ -110,6 +110,7 @@ body {
   min-width: 37.5rem;
   justify-content: space-between;
   border-radius: 2.4rem;
+  max-width: 44.5rem;
 }
 
 .schedule-demo-container input {
@@ -247,6 +248,73 @@ body {
   z-index: 0;
 }
 
+.heading-3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+.btn-wrapper {
+  text-decoration: none;
+}
+
+.ready-to-start {
+  font-size: 4.8rem;
+  font-family: 'DM Serif Display', serif;
+}
+
+.start-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 111rem;
+  margin: 0 auto;
+  padding: 0 4rem 8rem;
+}
+
+.footer {
+  background-color: var(--mirage-blue);
+  padding: 3rem;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  max-width: 111rem;
+  margin: 0 auto;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-container .nav-links {
+  display: flex;
+  gap: 4rem;
+  margin-left: 4rem;
+}
+
+.nav-socials {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-left: auto;
+}
+
+.footer-container .header-link {
+  color: var(--link-water-white);
+  opacity: 0.7;
+}
+
+.footer-container .header-link:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 900px) {
+  .start-block {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+
 @media only screen and (max-width: 850px) {
   .header .circle-bg {
     width: 95rem;
@@ -272,12 +340,20 @@ body {
     font-size: 3.2rem;
   }
 
+  .ready-to-start {
+    font-size: 3.2rem;
+  }
+
   .schedule-demo-container {
     flex-direction: column;
     background-color: transparent;
     gap: 2rem;
     width: 100%;
     min-width: auto;
+  }
+
+  .schedule-demo-container input {
+    border-radius: 2.4rem;
   }
 }
 
