@@ -4,13 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="./styles/styles.css" rel="stylesheet" />
+    <link href="./styles/pricing.css" rel="stylesheet" />
 
     <title>Frontend Mentor | PayAPI Website Challenge</title>
   </head>
 
   <body>
-    Pricing
+    <div class="menu-backdrop">
+      <div class="menu">
+        <div class="menu-circle"></div>
+        <ul>
+          <li>
+            <button type="button" aria-label="close button" class="closeBtn">
+              <img src="./assets/shared/mobile/close.svg" alt="close button" />
+            </button>
+          </li>
+          <li class="line"><hr/ ></li>
+          <li><a class="link header-link" href="./pricing.html">Pricing</a></li>
+          <li><a class="link header-link" href="./about.html">About</a></li>
+          <li><a class="link header-link" href="./contact.html">Contact</a></li>
+          <li><button type="button" class="btn-schedule-demo">Schedule a Demo</button></li>
+        </ul>
+      </div>
+    </div>
+    <header class="header-container">
+      <div class="header">
+        <img src="../assets/shared/desktop/bg-pattern-circle.svg" alt="" class="circle-bg" />
+        <nav class="nav-bar">
+          <a href="./index.html"><img class="logo" src="./assets/shared/desktop/logo.svg" alt="logo" /></a>
+          <a class="link header-link" href="./pricing.html">Pricing</a>
+          <a class="link header-link" href="./about.html">About</a>
+          <a class="link header-link" href="./contact.html">Contact</a>
+          <button type="button" class="btn-schedule-demo">Schedule a Demo</button>
+          <button type="button" aria-label="hamburger" class="hamburger">
+            <img src="./assets/shared/mobile/menu.svg" alt="" />
+          </button>
+        </nav>
+      </div>
+    </header>
+    <section class="start-block">
+      <p class="ready-to-start">Ready to start?</p>
+      <form class="schedule-demo-container">
+        <input type="text" name="schedule-demo" placeholder="Enter email address" />
+        <button type="button" class="btn-schedule-demo">Schedule a Demo</button>
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <img src="./assets/shared/desktop/white/logo.svg" alt="logo" class="footer-icon" />
+        <ul class="nav-links">
+          <li><a class="link header-link" href="./pricing.html">Pricing</a></li>
+          <li><a class="link header-link" href="./about.html">About</a></li>
+          <li><a class="link header-link" href="./contact.html">Contact</a></li>
+        </ul>
+        <ul class="nav-socials">
+          <li>
+            <a class="link header-link" href="http://www.facebook.com" target="_blank"><img src="./assets/shared/desktop/facebook.svg" alt="facebook" /></a>
+          </li>
+          <li>
+            <a class="link header-link" href="http://www.twitter.com" target="_blank"><img src="./assets/shared/desktop/twitter.svg" alt="twitter" /></a>
+          </li>
+          <li>
+            <a class="link header-link" href="http://www.linkedin.com" target="_blank"><img src="./assets/shared/desktop/linkedin.svg" alt="linkedin" /></a>
+          </li>
+        </ul>
+        <img src="../assets/shared/desktop/bg-pattern-circle.svg" alt="" class="circle-bg" />
+      </div>
+    </footer>
+    <!-- Pricing
     About
     Contact
     Schedule a Demo
@@ -62,7 +128,6 @@
 
     Pricing
     About
-    Contact
+    Contact -->
   </body>
-
 </html>

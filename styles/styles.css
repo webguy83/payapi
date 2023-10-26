@@ -44,7 +44,7 @@ body {
 
 .header .circle-bg {
   position: absolute;
-  top: -12rem;
+  top: -55rem;
   right: -33rem;
   z-index: 0;
 }
@@ -330,9 +330,10 @@ body {
 @media only screen and (max-width: 850px) {
   .header .circle-bg {
     width: 95rem;
-    left: 50%;
     transform: translateX(-50%);
     top: -65rem;
+    right: -115rem;
+    left: auto;
   }
 }
 
