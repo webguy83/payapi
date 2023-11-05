@@ -4,6 +4,7 @@
   --dark-pink: #ba4270;
   --link-water-white: #fbfcfe;
   --san-juan-blue: #36536b;
+  --san-juan-blue-border: rgba(54, 83, 107, 0.25);
   --mirage-blue: #1b262f;
   --light-blue: #edf3f8;
   --charm-pink: #da6d97;
@@ -26,6 +27,10 @@ body {
   color: var(--san-juan-blue);
 }
 
+.heading-1 {
+  font-size: 5.6rem;
+}
+
 .heading-2 {
   font-size: 4.8rem;
   color: var(--link-water-white);
@@ -39,7 +44,6 @@ body {
 .header-container {
   padding: 0 2.4rem;
   overflow: hidden;
-  /* background: url(../assets/shared/desktop/bg-pattern-circle.svg) no-repeat top -15rem right -20rem; */
 }
 
 .header .circle-bg {
@@ -162,7 +166,7 @@ body {
 
 .showMenu {
   visibility: visible;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(var(--san-juan-blue), 0.4);
 }
 
 .showMenu .menu {
@@ -264,28 +268,30 @@ body {
 }
 
 .start-block {
+  padding: 0 4rem 8rem;
+}
+
+.start-block-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 111rem;
   margin: 0 auto;
-  padding: 0 4rem 8rem;
 }
 
 .footer {
   background-color: var(--mirage-blue);
-  padding: 3rem;
-  overflow: hidden;
 }
 
 .footer-container {
   display: flex;
   align-items: center;
   position: relative;
-  max-width: 111rem;
   margin: 0 auto;
   justify-content: space-between;
   gap: 2rem;
+  overflow: hidden;
+  padding: 3rem;
 }
 
 .footer-container .nav-links {
@@ -321,7 +327,7 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
-  .start-block {
+  .start-block-container {
     flex-direction: column;
     gap: 5rem;
   }
@@ -366,6 +372,12 @@ body {
   .footer .circle-bg {
     right: auto;
     bottom: -64rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header .circle-bg {
+    top: -78rem;
   }
 }
 
