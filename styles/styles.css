@@ -62,7 +62,7 @@ body {
   max-width: 111rem;
   margin: 0 auto;
   min-height: 100vh;
-  padding: 4rem 0;
+  padding: 4rem 0 0;
 }
 
 .nav-bar {
@@ -108,6 +108,7 @@ body {
 }
 
 .schedule-demo-container {
+  box-shadow: 1rem 1rem 2.5rem -1rem var(--san-juan-blue-border);
   background-color: white;
   display: flex;
   width: 80%;
@@ -396,10 +397,12 @@ body {
     gap: 2rem;
     width: 100%;
     min-width: auto;
+    box-shadow: inherit;
   }
 
   .schedule-demo-container input {
     border-radius: 2.4rem;
+    box-shadow: 1rem 1rem 2.5rem -1rem var(--san-juan-blue-border);
   }
 }
 
