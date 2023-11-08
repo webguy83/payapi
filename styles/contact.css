@@ -1,0 +1,210 @@
+.header {
+  min-height: 40rem;
+}
+
+.about-info-container .heading-1 {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  max-width: 73rem;
+}
+
+.combined-blocks {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  max-width: 111rem;
+  margin: 0 auto;
+  gap: 6.5rem;
+  padding: 0 2.4rem;
+  margin-bottom: 6rem;
+}
+
+.submit-btn {
+  border-radius: 2.4rem;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+  padding: 1.6rem 4.8rem;
+  border: 1px solid var(--san-juan-blue);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--san-juan-blue);
+  transition: all 0.3s;
+}
+
+.submit-btn:hover {
+  background: var(--san-juan-blue);
+  color: var(--link-water-white);
+}
+
+.form {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: var(--white);
+  border-bottom: 1px solid var(--san-juan-blue-placeholder);
+  padding-bottom: 2rem;
+  font-family: inherit;
+  padding-left: 1.5rem;
+  font-size: inherit;
+  font-weight: inherit;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.input.message {
+  resize: none;
+}
+
+.input::placeholder {
+  color: var(--san-juan-blue-placeholder);
+}
+
+.input.error::placeholder {
+  color: #ff000080;
+  opacity: 0.6;
+}
+
+.input.error {
+  border-bottom: 1px solid #ff000080;
+}
+
+.input-error-txt {
+  color: #ff000080;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 700;
+  padding-left: 1.5rem;
+}
+
+.visually-hidden {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+  clip: rect(1px, 1px, 1px, 1px); /*maybe deprecated but we need to support legacy browsers */
+  clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
+  white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+}
+
+.custom-checkbox {
+  margin: 2.6rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-input {
+  display: none;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.checkbox-box {
+  width: 2.4rem;
+  min-width: 2.4rem;
+  height: 2.4rem;
+  background-color: var(--san-juan-blue-border);
+  margin-right: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox-input:checked + .checkbox-label .checkbox-box {
+  background-color: var(--dark-pink);
+  border-color: var(--dark-pink);
+}
+
+.checkbox-box::after {
+  content: '\2713'; /* Unicode checkmark character */
+  font-size: 1.8rem;
+  color: white;
+  display: none;
+}
+
+.checkbox-input:checked + .checkbox-label .checkbox-box::after {
+  display: block;
+}
+
+.label-text-container {
+  flex: 1; /* Allow the text to take remaining space */
+}
+
+.label-text {
+  line-height: 2.5rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  word-wrap: break-word; /* Allow the text to wrap */
+}
+
+.content-area {
+  align-self: center;
+}
+
+.content-area .desc {
+  font-size: 2.4rem;
+  font-family: 'DM Serif Display';
+  margin-bottom: 5rem;
+  opacity: 0.75;
+}
+
+.logos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .about-info-container .heading-1 {
+    font-size: 4.8rem;
+  }
+
+  .main-content-container {
+    margin-bottom: 7rem;
+  }
+
+  .combined-blocks {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-info-container .heading-1 {
+    font-size: 3.2rem;
+  }
+
+  .logos-container {
+    grid-gap: initial;
+    grid-row-gap: 3rem;
+  }
+
+  .logos-container img {
+    max-width: 10.4rem;
+  }
+
+  .combined-blocks {
+    margin-bottom: 0;
+  }
+
+  .header {
+    min-height: 30rem;
+  }
+}

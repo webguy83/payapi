@@ -5,11 +5,13 @@
   --link-water-white: #fbfcfe;
   --san-juan-blue: #36536b;
   --san-juan-blue-border: rgba(54, 83, 107, 0.25);
+  --san-juan-blue-placeholder: rgba(54, 83, 107, 0.5);
   --mirage-blue: #1b262f;
   --light-blue: #edf3f8;
   --charm-pink: #da6d97;
   --light-san-juan-blue: #6c8294;
 }
+
 /* font-family: 'DM Serif Display', serif;
 font-family: 'Public Sans', sans-serif; */
 

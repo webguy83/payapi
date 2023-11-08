@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 5rem;
 }
 
 .header .circle-bg {
@@ -19,6 +20,7 @@
   opacity: 0.7;
   margin-top: 1.6rem;
   padding-left: 2rem;
+  color: var(--light-san-juan-blue);
 }
 
 .info {

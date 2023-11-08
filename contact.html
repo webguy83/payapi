@@ -5,35 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="./styles/styles.css" rel="stylesheet" />
+    <link href="./styles/contact.css" rel="stylesheet" />
 
     <title>Frontend Mentor | PayAPI Website Challenge</title>
   </head>
 
   <body>
-    Pricing
-    About
-    Contact
-    Schedule a Demo
+    <div class="menu-backdrop">
+      <div class="menu">
+        <div class="menu-circle"></div>
+        <ul>
+          <li>
+            <button type="button" aria-label="close button" class="closeBtn">
+              <img src="./assets/shared/mobile/close.svg" alt="close button" />
+            </button>
+          </li>
+          <li class="line"><hr/ ></li>
+          <li><a class="link header-link" href="./pricing.html">Pricing</a></li>
+          <li><a class="link header-link" href="./about.html">About</a></li>
+          <li><a class="link header-link" href="./contact.html">Contact</a></li>
+          <li><button type="button" class="btn-schedule-demo">Schedule a Demo</button></li>
+        </ul>
+      </div>
+    </div>
+    <header class="header-container">
+      <div class="header">
+        <img src="../assets/shared/desktop/bg-pattern-circle.svg" alt="" class="circle-bg" />
+        <nav class="nav-bar">
+          <a href="./index.html"><img class="logo" src="./assets/shared/desktop/logo.svg" alt="logo" /></a>
+          <a class="link header-link" href="./pricing.html">Pricing</a>
+          <a class="link header-link" href="./about.html">About</a>
+          <a class="link header-link" href="./contact.html">Contact</a>
+          <button type="button" class="btn-schedule-demo">Schedule a Demo</button>
+          <button type="button" aria-label="hamburger" class="hamburger">
+            <img src="./assets/shared/mobile/menu.svg" alt="" />
+          </button>
+        </nav>
+        <div class="about-info-container">
+          <h1 class="heading-1">Submit a help request and we'll get in touch shortly.</h1>
+        </div>
+        <div></div>
+      </div>
+    </header>
+    <main class="main-content-container">
+      <div class="combined-blocks">
+        <form novalidate class="form" id="contactForm">
+          <div class="input-group">
+            <label for="name" class="visually-hidden">Name</label><br />
+            <input type="text" id="name" name="name" placeholder="Name" class="input" required />
+            <p class="input-error-txt"></p>
+          </div>
+          <div class="input-group">
+            <label for="email" class="visually-hidden">Email Address</label><br />
+            <input type="email" id="email" name="email" placeholder="Email Address" class="input" required />
+            <p class="input-error-txt"></p>
+          </div>
+          <div class="input-group">
+            <label for="company" class="visually-hidden">Company Name</label><br />
+            <input type="text" id="company" name="company" placeholder="Company Name" class="input" />
+          </div>
+          <div class="input-group">
+            <label for="title" class="visually-hidden">Title</label><br />
+            <input type="text" id="title" name="title" placeholder="Title" class="input" />
+          </div>
+          <div class="input-group">
+            <label class="visually-hidden" for="message">Message</label>
+            <textarea id="message" name="message" rows="4" cols="50" class="input message" placeholder="Message" required></textarea>
+            <p class="input-error-txt"></p>
+          </div>
+          <div class="custom-checkbox">
+            <input type="checkbox" id="custom-checkbox" class="checkbox-input" />
+            <label for="custom-checkbox" class="checkbox-label">
+              <div class="checkbox-box"></div>
+              <span class="label-text">Stay up-to-date with company announcements and updates to our API</span>
+            </label>
+          </div>
 
-    Submit a help request and we’ll get in touch shortly.
-    
-    Name
-    Email Address
-    Company Name
-    Title
-    Message
-    Stay up-to-date with company announcements and updates to our API
-    Submit
-
-    Join the thousands of innovators already building with us
-
-    Ready to start? 
-    Enter email address 
-    Schedule a Demo
-
-    Pricing
-    About
-    Contact
+          <input type="submit" class="submit-btn" value="Submit" />
+        </form>
+        <div class="content-area">
+          <p class="desc">Join the thousands of innovators already building with us</p>
+          <div class="logos-container">
+            <img src="./assets/shared/desktop/tesla.svg" alt="tesla" />
+            <img src="./assets/shared/desktop/microsoft.svg" alt="microsoft" />
+            <img src="./assets/shared/desktop/hewlett-packard.svg" alt="hewlett-packard" />
+            <img src="./assets/shared/desktop/oracle.svg" alt="oracle" />
+            <img src="./assets/shared/desktop/google.svg" alt="google" />
+            <img src="./assets/shared/desktop/nvidia.svg" alt="nvidia" />
+          </div>
+        </div>
+      </div>
+      <img src="./assets/bg-pattern-contact-2.svg" alt="" class="contact-pattern-2" />
+    </main>
+    <section class="start-block">
+      <div class="start-block-container">
+        <p class="ready-to-start">Ready to start?</p>
+        <form class="schedule-demo-container">
+          <input type="text" name="schedule-demo" placeholder="Enter email address" />
+          <button type="button" class="btn-schedule-demo">Schedule a Demo</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <img src="./assets/shared/desktop/white/logo.svg" alt="logo" class="footer-icon" />
+        <ul class="nav-links">
+          <li><a class="link header-link" href="./pricing.html">Pricing</a></li>
+          <li><a class="link header-link" href="./about.html">About</a></li>
+          <li><a class="link header-link" href="./contact.html">Contact</a></li>
+        </ul>
+        <ul class="nav-socials">
+          <li>
+            <a class="link header-link" href="http://www.facebook.com" target="_blank"><img src="./assets/shared/desktop/facebook.svg" alt="facebook" /></a>
+          </li>
+          <li>
+            <a class="link header-link" href="http://www.twitter.com" target="_blank"><img src="./assets/shared/desktop/twitter.svg" alt="twitter" /></a>
+          </li>
+          <li>
+            <a class="link header-link" href="http://www.linkedin.com" target="_blank"><img src="./assets/shared/desktop/linkedin.svg" alt="linkedin" /></a>
+          </li>
+        </ul>
+        <img src="../assets/shared/desktop/bg-pattern-circle.svg" alt="" class="circle-bg" />
+      </div>
+    </footer>
+    <script src="dist/main.js"></script>
+    <script src="dist/contact.js"></script>
   </body>
-
 </html>

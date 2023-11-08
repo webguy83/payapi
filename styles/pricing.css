@@ -82,10 +82,10 @@ img.not-applicable {
   font: inherit;
   cursor: pointer;
   padding: 1.6rem 2.8rem;
-  border: 1px solid #36536b;
+  border: 1px solid var(--san-juan-blue);
   font-size: 1.5rem;
   font-weight: 700;
-  color: #36536b;
+  color: var(--san-juan-blue);
   transition: all 0.3s;
 }
 
