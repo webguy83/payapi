@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [https://webguy83.github.io/payapi/](https://webguy83.github.io/payapi/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/pay-api-static-site-built-with-no-frameworkssome-typescript-BgoD0Al61r)
+- Live Site URL: [Live Site](https://webguy83.github.io/payapi/)
 
 ## My process
 
